@@ -23,14 +23,14 @@ document.querySelector('.book-now').addEventListener('click', function () {
     }
 });
 // First Class Plus Button Click Event
-const firstClassPlusBtn = document.querySelector('.first-class-plus');
+const firstClassPlusBtn = document.querySelector('.firstClass-plus');
 firstClassPlusBtn.addEventListener('click', function () {
     increaseSpinner(firstClassTicket);
     grandTotal();
 });
 
 // First Class Minus Button Click Event
-const firstClassMinusBtn = document.querySelector('.first-class-minus');
+const firstClassMinusBtn = document.querySelector('.firstClass-minus');
 firstClassMinusBtn.addEventListener('click', function () {
     decreaseSpinner(firstClassTicket);
     grandTotal();
