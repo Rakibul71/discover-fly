@@ -1,4 +1,3 @@
-  
 * {
     padding: 0;
     margin: 0;
@@ -184,11 +183,11 @@ table {
     vertical-align: top;
 }
 
-.twopx td {
+.second td {
     vertical-align: top;
     border-top: 2px solid #dee2e6;
 }
-.strong {
+.extra {
     font-weight: 600;
 }
 

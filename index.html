@@ -1,4 +1,3 @@
-  
 <!DOCTYPE html>
 <html lang="en">
 
@@ -106,9 +105,9 @@
             <button class="btn-style book-now">Book Now</button>
         </div>
 
-        <div class="booking-details">
+        <div style="color: chocolate;" class="booking-details">
             <header>
-                <h3> Successfully Booked Your Flight</h3>
+                <h2> Successfully Booked Your Flight</h2>
                 <p>Your Flight Details</p>
             </header>
             
@@ -117,42 +116,42 @@
                 <tbody>
 
                   <tr>
-                    <td class="strong">Flying From</td>
+                    <td class="extra">Flying From</td>
                     <td class="user-flying-from"></td>
                   </tr>
 
                   <tr>
-                    <td class="strong">Flying To</td>
+                    <td class="extra">Flying To</td>
                     <td class="user-flying-to"></td>
                   </tr>
 
                   <tr>
-                    <td class="strong">Departure</td>
+                    <td class="extra">Departure</td>
                     <td class="user-departure-date"></td>
                   </tr>
 
                   <tr>
-                    <td class="strong">Return</td>
+                    <td class="extra">Return</td>
                     <td class="user-return-date"></td>
                   </tr>
                   <tr>
-                    <td class="strong">First Class</td>
+                    <td class="extra">First Class</td>
                     <td><span class="user-first-class"></span> Tickets</td>
                   </tr>
                   <tr>
-                    <td class="strong">Economy</td>
+                    <td class="extra">Economy</td>
                     <td><span class="user-economy-class"></span> Tickets</td>
                   </tr>
-                  <tr class="twopx">
-                    <td class="strong">Subtotal</td>
+                  <tr class="second">
+                    <td class="extra">Subtotal</td>
                     <td> $ <span class="user-subtotal"></span></td>
                   </tr>
                   <tr>
-                    <td class="strong">Vat</td>
+                    <td class="extra">Vat</td>
                     <td> $ <span class="user-vat"></span></td>
                   </tr>
                   <tr>
-                    <td class="strong">Total</td>
+                    <td class="extra">Total</td>
                     <td > $ <span class="user-total"></span></td>
                   </tr>
                   
@@ -174,22 +173,22 @@
         
 // Booking conform block and Bonus part
 document.querySelector('.book-now').addEventListener('click', function () {
-    const fryingFrom = document.querySelector('.flying-from').value;
-    const fryingTo = document.querySelector('.flying-to').value;
-    const fryingDeparture = document.querySelector('.flying-departure').value;
-    const fryingReturn = document.querySelector('.flying-return').value;
+    const flyFrom = document.querySelector('.flying-from').value;
+    const flyTo = document.querySelector('.flying-to').value;
+    const flyDeparture = document.querySelector('.flying-departure').value;
+    const flyReturn = document.querySelector('.flying-return').value;
     const firstClassTicket = document.querySelector('.first-class-ticket-amount').value;
     const economyTicket = document.querySelector('.economy-ticket-amount').value;
 
-    if (!fryingFrom || !fryingTo || !fryingDeparture || !fryingReturn || !firstClassTicket || !economyTicket) {
+    if (!flyFrom || !flyTo || !flyDeparture || !flyReturn || !firstClassTicket || !economyTicket) {
         document.querySelector('.warning').textContent = 'Hello Sir,Please fill all the Input';
     } else {
         document.querySelector('.booking-form').style.display = 'none';
         document.querySelector('.booking-details').style.display = 'block';
-        document.querySelector('.user-flying-from').textContent = fryingFrom;
-        document.querySelector('.user-flying-to').textContent = fryingTo;
-        document.querySelector('.user-departure-date').textContent = fryingDeparture;
-        document.querySelector('.user-return-date').textContent = fryingReturn;
+        document.querySelector('.user-flying-from').textContent = flyFrom;
+        document.querySelector('.user-flying-to').textContent = flyTo;
+        document.querySelector('.user-departure-date').textContent = flyDeparture;
+        document.querySelector('.user-return-date').textContent = flyReturn;
         document.querySelector('.user-first-class').textContent = firstClassTicket;
         document.querySelector('.user-economy-class').textContent = economyTicket;
         grandTotal();
